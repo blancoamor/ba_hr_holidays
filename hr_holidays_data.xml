@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<openerp>
+    <data noupdate="1">
+        <!-- After installation of the module, open the related menu -->
+        <record id="holiday_status_enfermedad" model="hr.holidays.status">
+            <field name="name">Enfermedad</field>
+            <field name="color_name">red</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_cuidado" model="hr.holidays.status">
+            <field name="name">Cuidado fliar</field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_ausente" model="hr.holidays.status">
+            <field name="name">Ausente</field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_franco_trabajado" model="hr.holidays.status">
+            <field name="name">Franco trabajado </field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_franco_laboral" model="hr.holidays.status">
+            <field name="name">Franco laboral</field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_reemplazo" model="hr.holidays.status">
+            <field name="name">Reemplazo cajas</field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_mudanza" model="hr.holidays.status">
+            <field name="name">Mudanza</field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_fallecimiento" model="hr.holidays.status">
+            <field name="name">Fallecimiento</field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_nacimiento" model="hr.holidays.status">
+            <field name="name">Nacimiento</field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_sangre" model="hr.holidays.status">
+            <field name="name">Sangre</field>
+            <field name="color_name">black</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_examen" model="hr.holidays.status">
+            <field name="name">Examen</field>
+            <field name="color_name">red</field>
+            <field name="limit">false</field>
+        </record>
+        <record id="holiday_status_maternidad" model="hr.holidays.status">
+            <field name="name">Maternidad</field>
+            <field name="color_name">red</field>
+            <field name="limit">false</field>
+        </record>
+    </data>
+</openerp>

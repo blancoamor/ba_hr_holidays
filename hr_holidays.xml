@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+          
+        <record id="ba_hr_holidays.view_holiday_new_calendar" model="ir.ui.view">
+            <field name="name">ba_hr_holidays.view_holiday_new_calendar.inherit</field>
+            <field name="model">hr.holidays</field>
+            <field name="inherit_id" ref="hr_holidays.view_holiday_new_calendar"/>
+            <field name="arch" type="xml">
+                <field name="employee_id" position="after">
+                    <field name="section_id"/>
+                </field>
+            </field>
+        </record>
+         
+        <record id="ba_view_holiday" model="ir.ui.view">
+            <field name="name">ba_view.holiday.inherit</field>
+            <field name="model">hr.holidays</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="hr_holidays.view_holiday"/>
+            <field name="arch" type="xml">
+                <field name="employee_id" position="after">
+                    <field name="section_id"/>
+                </field>
+                
+            </field>
+        </record>
+        <record id="ba_edit_holiday_new" model="ir.ui.view">
+            <field name="name">ba_hr_holidays.edit_holiday_new</field>
+            <field name="model">hr.holidays</field>
+            <field name="inherit_id" ref="hr_holidays.edit_holiday_new"/>
+            <field name="arch" type="xml">
+                <field name="employee_id" position="after">
+                    <field name="section_id"/>
+                </field>
+            </field>
+        </record>
+         <record id="ba_hr_holidays.view_hr_holidays_filter" model="ir.ui.view">
+            <field name="name">ba_hr_holidays.view_hr_holidays_filter</field>
+            <field name="model">hr.holidays</field>
+            <field name="inherit_id" ref="hr_holidays.view_hr_holidays_filter" />
+            <field name="arch" type="xml">
+                <field name="employee_id" position="after">
+                    <field name="section_id"/>
+                </field>
+                <xpath expr="//filter[@string='Employee']"
+                    position="after">
+                    <filter string="Section"  domain="[]" context="{'group_by' : 'section_id'}"/>
+                </xpath>                                    
+                </field>
+            </record>
+
+
+        <record id="alta_franco_compensatorio" model="ir.ui.view">
+            <field name="name">alta.franco.compensatorio</field>
+            <field name="model">alta.franco.compensatorio</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="2">
+                            <field name="section_id" options="{'no_create':true,'no_open': True , 'limit': 15}"/>
+
+                        </group>
+                        <group col="2">
+                            <field name="lunes" options="{'no_create':true,'no_open': True , 'limit': 15}"/>
+                            <field name="martes" options="{'no_create':true,'no_open': True , 'limit': 15}"/>
+                            <field name="miercoles" options="{'no_create':true,'no_open': True , 'limit': 15}"/>
+                            <field name="jueves" options="{'no_create':true,'no_open': True , 'limit': 15}"/>
+                            <field name="viernes" options="{'no_create':true,'no_open': True , 'limit': 15}"/>
+                        </group>
+                        <footer>
+                            <button class="oe_highlight" name="set_franco" string="pedir francos" type="object"/>
+                            <button special="cancel" string="Cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_alta_franco_compensatorio" model="ir.actions.act_window">
+            <field name="name">Pedir francos semanales</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">alta.franco.compensatorio</field>
+            <field name="view_id" ref="alta_franco_compensatorio"/>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem action="action_alta_franco_compensatorio" id="menu_action_alta_franco_compensatorio" parent="hr_holidays.menu_open_ask_holidays" sequence="1"/>
+
+    </data>
+</openerp>

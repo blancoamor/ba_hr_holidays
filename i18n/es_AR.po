@@ -1,0 +1,169 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ba_hr_holidays
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-13 22:43+0000\n"
+"PO-Revision-Date: 2016-04-13 19:45-0300\n"
+"Last-Translator: Filoquin <filoquin@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_ausente
+msgid "Ausente"
+msgstr "Ausente"
+
+#. module: ba_hr_holidays
+#: view:alta.franco.compensatorio:ba_hr_holidays.alta_franco_compensatorio
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_cuidado
+msgid "Cuidado fliar"
+msgstr "Cuidado fliar"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_enfermedad
+msgid "Enfermedad"
+msgstr "Enfermedad"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_examen
+msgid "Examen"
+msgstr "Examen"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_fallecimiento
+msgid "Fallecimiento"
+msgstr "Fallecimiento"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_franco_laboral
+msgid "Franco laboral"
+msgstr "Franco laboral"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_franco_trabajado
+msgid "Franco trabajado "
+msgstr "Franco trabajado "
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: ba_hr_holidays
+#: model:ir.model,name:ba_hr_holidays.model_hr_holidays
+msgid "Leave"
+msgstr "Ausencia"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_maternidad
+msgid "Maternidad"
+msgstr "Maternidad"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_mudanza
+msgid "Mudanza"
+msgstr "Mudanza"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_nacimiento
+msgid "Nacimiento"
+msgstr "Nacimiento"
+
+#. module: ba_hr_holidays
+#: model:ir.actions.act_window,name:ba_hr_holidays.action_alta_franco_compensatorio
+#: model:ir.ui.menu,name:ba_hr_holidays.menu_action_alta_franco_compensatorio
+msgid "Pedir francos semanales"
+msgstr "Pedir francos semanales"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_reemplazo
+msgid "Reemplazo cajas"
+msgstr "Reemplazo cajas"
+
+#. module: ba_hr_holidays
+#: model:hr.holidays.status,name:ba_hr_holidays.holiday_status_sangre
+msgid "Sangre"
+msgstr "Sangre"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,section_id:0
+#: view:hr.holidays:ba_hr_holidays.view_hr_holidays_filter
+#: field:hr.holidays,section_id:0
+msgid "Section"
+msgstr "Equipo"
+
+#. module: ba_hr_holidays
+#: code:addons/ba_hr_holidays/hr_holidays.py:35
+#: code:addons/ba_hr_holidays/hr_holidays.py:60
+#, python-format
+msgid "The start date must be anterior to the end date."
+msgstr "La fecha de inicio debe ser anterior a ka fecha de finalizacion."
+
+#. module: ba_hr_holidays
+#: code:addons/ba_hr_holidays/hr_holidays.py:35
+#: code:addons/ba_hr_holidays/hr_holidays.py:60
+#, python-format
+msgid "Warning!"
+msgstr "Warning!"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,jueves:0
+msgid "jueves"
+msgstr "jueves"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,lunes:0
+msgid "lunes"
+msgstr "lunes"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,martes:0
+msgid "martes"
+msgstr "martes"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,miercoles:0
+msgid "miercoles"
+msgstr "miercoles"
+
+#. module: ba_hr_holidays
+#: view:alta.franco.compensatorio:ba_hr_holidays.alta_franco_compensatorio
+msgid "pedir francos"
+msgstr "pedir francos"
+
+#. module: ba_hr_holidays
+#: field:alta.franco.compensatorio,viernes:0
+msgid "viernes"
+msgstr "viernes"
