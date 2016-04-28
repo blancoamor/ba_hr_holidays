@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding    : utf-8 -*-
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
@@ -19,5 +19,16 @@
 #
 ##############################################################################
 
-import hr_holidays
-import hr_employee
+from openerp import models, api, fields
+
+from openerp.osv import fields, osv 
+
+
+
+class hr_employee(osv.osv):
+    _inherit = "hr.employee"
+
+    _columns = {
+        'admision_date': fields.date('Ingreso'),
+
+    }

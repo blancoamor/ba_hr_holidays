@@ -36,6 +36,7 @@ Ausencias
     'data': [
         'hr_holidays.xml',
         'hr_holidays_data.xml',
+        'hr_employee.xml',
         
 
     ],
