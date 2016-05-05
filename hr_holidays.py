@@ -38,7 +38,7 @@ class hr_holidays(osv.osv):
 
         # No date_to set so far: automatically compute one 8 hours later
         if date_from and not date_to:
-            date_to_with_delta = datetime.datetime.strptime(date_from, tools.DEFAULT_SERVER_DATETIME_FORMAT) + datetime.timedelta(hours=4)
+            date_to_with_delta = datetime.datetime.strptime(date_from, tools.DEFAULT_SERVER_DATETIME_FORMAT) + datetime.timedelta(hours=4.5)
             result['value']['date_to'] = str(date_to_with_delta)
 
         # Compute and update the number of days
@@ -149,21 +149,21 @@ class alta_franco_compensatorio(osv.osv_memory):
 
         franco_day=self.next_weekday(day)
             
-        section=crm_section_obj.browse(cr,uid,section_id,context=None)
-        #hr_employee=hr_employee_obj.browse(cr,uid,employee_id,context=None)
 
         
 
         hr_holidays={
             'name': 'Franco laboral',
             'number_of_days_temp' : 0.5 ,
-            'date_from': franco_day.strftime("%Y-%m-%d") +  " 09:00:00" ,
-            'date_to': franco_day.strftime("%Y-%m-%d") +  " 13:00:00" ,
+            'date_from': franco_day.strftime("%Y-%m-%d") +  " 11:30:00" ,
+            'date_to': franco_day.strftime("%Y-%m-%d") +  " 16:00:00" ,
             'employee_id':employee_id[0],
             'holiday_status_id':holiday_status_id,
-            'section_id':section_id[0],
 
         }
+        if section_id :
+            section_id['section_id']=section_id[0]
+
         hr_holidays_obj.create(cr, uid,hr_holidays)
 
     def next_weekday(self , weekday):
