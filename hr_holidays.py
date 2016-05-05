@@ -162,7 +162,7 @@ class alta_franco_compensatorio(osv.osv_memory):
 
         }
         if section_id :
-            section_id['section_id']=section_id[0]
+            hr_holidays['section_id']=section_id[0]
 
         hr_holidays_obj.create(cr, uid,hr_holidays)
 
